@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app-dev:
+    extends:
+      file: docker-compose.yml
+      service: app
+    command: make dev
+    ports:
+      - "8080:8080"
