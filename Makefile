@@ -1,8 +1,8 @@
-run:
-	docker compose up
+run-dev:
+	docker compose -f docker-compose.override.yml up
 
-shutdown:
-	docker compose down
+shutdown-dev:
+	docker compose -f docker-compose.override.yml down
 
 test:
-	docker compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
+	docker compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app-prod
