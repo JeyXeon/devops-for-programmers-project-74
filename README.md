@@ -9,3 +9,6 @@
 | make test    | Run tests for application using docker compose. Uses `docker-compose.yml` file.                                                                           |
 
 Both commands use docker compose plugin from docker package, not docker-compose tool. Make sure you have fresh version of docker before running it.
+
+### Docker image link
+`docker pull mityanedima/devops-for-programmers-project-74:latest`
