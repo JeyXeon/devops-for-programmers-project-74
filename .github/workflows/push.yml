@@ -9,6 +9,11 @@ on:
 
 jobs:
   publish-image:
+    env:
+      DATABASE_HOST: ${{ vars.DATABASE_HOST }}
+      DATABASE_NAME: ${{ vars.DATABASE_NAME }}
+      DATABASE_USERNAME: ${{ vars.DATABASE_USERNAME }}
+      DATABASE_PASSWORD: ${{ vars.DATABASE_PASSWORD }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
